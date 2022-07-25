@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+}
+
+#username {
+    display: block;
+    text-align: center;
+    margin: 0 auto 15px auto;
+    padding: 10px;
+    font-size: 0.75rem;
+}
+
+#first-to {
+    display: block;
+    text-align: center;
+    margin: 0 auto 30px auto;
+    width: 100px;
+}
+
+::placeholder {
+    text-align: center;
+    color: black;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: gray;
+    cursor: pointer;
+}
