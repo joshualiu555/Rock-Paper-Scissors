@@ -7,10 +7,10 @@ function addElement(find_id, tag, text, add_id) {
     document.getElementById(find_id).appendChild(element);
 }
 
-addElement("player-scores", "h1", username, "");
-addElement("player-scores", "h1", "CPU", "");
-addElement("player-scores", "h1", "0", "user_score");
-addElement("player-scores", "h1", "0", "cpu_score");
+addElement("players-scores", "h1", username, "");
+addElement("players-scores", "h1", "CPU", "");
+addElement("players-scores", "h1", "0", "user_score");
+addElement("players-scores", "h1", "0", "cpu_score");
 
 function end_game(message) {
     result.innerHTML = message + " Click any key to restart.";
@@ -32,11 +32,11 @@ function find_winner(user_choice) {
         if (winner === 1) {
             user_score++;
             if (user_score === first_to) end_game("YOU WIN!!!");
-            else result.innerHTML = `You win! You chose ${choices[user_choice]} and the CPU choise ${choices[cpu_choice]}.`;
+            else result.innerHTML = `You win! You chose ${choices[user_choice]} and the CPU chose ${choices[cpu_choice]}.`;
         } else if (winner === 2) {
             cpu_score++;
             if (cpu_score === first_to) end_game("YOU LOSE :(");
-            else result.innerHTML = `You lose! You chose ${choices[user_choice]} and the CPU choise ${choices[cpu_choice]}.`;
+            else result.innerHTML = `You lose! You chose ${choices[user_choice]} and the CPU chose ${choices[cpu_choice]}.`;
         } else {
             result.innerHTML = `It's a tie! You both chose ${choices[user_choice]}.`;
         }
